@@ -41,7 +41,8 @@ npx create-base-app --install true
 MIT
 
 ## Templates available to start
-- [ ] NodeJS/Express DDD Api Backend Template
+- [ ] ReactJS DDD Front Template
+- [X] NodeJS/Express DDD Api Backend Template
 - [X] ReactJS Normal Template
 - [X] Vite ReactJS Typescript Template
 - [X] Vite Vue Typescript Template
