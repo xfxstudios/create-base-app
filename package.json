@@ -1,0 +1,41 @@
+{
+  "name": "@xfxstudios/create-base-app",
+  "version": "1.0.8",
+  "description": "Templates in different languages to initialize a project",
+  "main": "src/main.js",
+  "bin": "bin/create-base-app",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "create-base-app",
+    "create-template-app",
+    "hitcel",
+    "xfxstudios"
+  ],
+  "author": "Carlos Quintero <info.fxstudios@gmail.com> (http://quinterdev.com)",
+  "license": "MIT",
+  "dependencies": {
+    "arg": "^4.1.0",
+    "axios": "^1.4.0",
+    "chalk": "^2.4.2",
+    "covgen": "^3.1.0",
+    "esm": "^3.2.18",
+    "execa": "^1.0.0",
+    "gitignore": "^0.6.0",
+    "inquirer": "^6.2.2",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^0.2.0",
+    "qs": "^6.11.2",
+    "spdx-license-list": "^5.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/"
+  ]
+}
