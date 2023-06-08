@@ -21,6 +21,12 @@ npx create-base-app
 <p>and follow wizard.</p>
 <br/>
 
+![alt text](https://github.com/xfxstudios/create-base-app/blob/master/img/wizard1.jpg?raw=true)
+
+![alt text](https://github.com/xfxstudios/create-base-app/blob/master/img/wizard2.jpg?raw=true)
+
+![alt text](https://github.com/xfxstudios/create-base-app/blob/master/img/wizard3.jpg?raw=true)
+
 
 ## Flags:
 
