@@ -1,11 +1,14 @@
 {
   "name": "@xfxstudios/create-base-app",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Templates in different languages to initialize a project",
   "main": "src/main.js",
   "bin": "bin/create-base-app",
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "url": "https://github.com/xfxstudios/create-base-app"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
