@@ -10,7 +10,7 @@ import {execSync} from 'child_process';
 
 const writeFile=promisify(fs.writeFile);
 const writeGitignore=promisify(gitignore.writeFile);
-const appVersion='v1.0.8'
+const appVersion='v1.1.0'
 
 async function copyTemplateFiles(options) {
   try{
@@ -23,11 +23,14 @@ async function copyTemplateFiles(options) {
       case chalk.green('Vite-ReactJS'):
           return await execSync(`npm create vite@latest ${options.projectname} -- --template react-ts`);
 
-        case chalk.magenta('Vite-Vue'):
+      case chalk.magenta('Vite-Vue'):
           return await execSync(`npm create vite@latest ${options.projectname} -- --template vue-ts`);
 
-        case chalk.yellow('Vite-Svelte'):
+      case chalk.yellow('Vite-Svelte'):
           return await execSync(`npm create vite@latest ${options.projectname} -- --template svelte-ts`);
+
+      case chalk.magenta('Express-DDD-Api'):
+        return execSync(`git clone --branch develop https://xfxstudios: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@github.com/xfxstudios/express-ddd-api.git ${options.projectname}`);
     }
   }catch(e){
     return e

@@ -44,8 +44,7 @@ async function promptForMissingOptions(options) {
       name: 'template',
       message: 'Please choose which project template to use',
       choices: [
-        // chalk.cyan('DDD-NodeJs-Express-Template'),
-        // chalk.magenta('Basic-NodeJs-Express-Template'),
+        chalk.magenta('Express-DDD-Api'),
         chalk.blue('Normal-ReactJS'),
         chalk.green('Vite-ReactJS'),
         chalk.magenta('Vite-Vue'),
