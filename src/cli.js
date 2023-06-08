@@ -3,6 +3,8 @@ import inquirer from 'inquirer';
 import {createProject} from './main';
 import chalk from 'chalk';
 
+export const appVersion='v1.2.0'
+
 function parseArgumentsIntoOptions(rawArgs) {
   const args=arg(
     {
@@ -84,7 +86,7 @@ async function promptForMissingOptions(options) {
 
 export async function cli(args) {
   console.log(chalk.yellow("*************************************************"))
-  console.log(chalk.yellow("************[ Create Base App]*******************"))
+  console.log(chalk.yellow(`*******[ Create Base App v${appVersion} ]********`))
   console.log(chalk.yellow("*************************************************\n"))
   let options=parseArgumentsIntoOptions(args);
   options=await promptForMissingOptions(options);

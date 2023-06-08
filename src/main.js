@@ -7,10 +7,11 @@ import path from 'path';
 import {projectInstall} from 'pkg-install';
 import {promisify} from 'util';
 import {execSync} from 'child_process';
+import appVersion from './cli'
 
 const writeFile=promisify(fs.writeFile);
 const writeGitignore=promisify(gitignore.writeFile);
-const appVersion='v1.1.1'
+
 
 async function copyTemplateFiles(options) {
   try{
