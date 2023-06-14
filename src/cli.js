@@ -3,7 +3,7 @@ import inquirer from 'inquirer';
 import {createProject} from './main';
 import chalk from 'chalk';
 
-export const appVersion='v1.2.0'
+export const appVersion='v1.2.2'
 
 function parseArgumentsIntoOptions(rawArgs) {
   const args=arg(
@@ -46,11 +46,12 @@ async function promptForMissingOptions(options) {
       name: 'template',
       message: 'Please choose which project template to use',
       choices: [
-        chalk.magenta('Express-DDD-Api'),
-        chalk.blue('Normal-ReactJS'),
-        chalk.green('Vite-ReactJS'),
-        chalk.magenta('Vite-Vue'),
-        chalk.yellow('Vite-Svelte'),
+        chalk.magenta('Express DDD Api'),
+        chalk.blue('Normal ReactJS'),
+        chalk.green('Vite ReactJS'),
+        chalk.magenta('Vite Vue'),
+        chalk.yellow('Vite Svelte'),
+        chalk.blue('NextJS App'),
       ],
       default: defaultTemplate,
     });

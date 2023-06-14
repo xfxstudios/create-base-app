@@ -47,6 +47,7 @@ MIT
 - [X] Vite ReactJS Typescript Template
 - [X] Vite Vue Typescript Template
 - [X] Vite Svelte Typescript Template
+- [X] NextJS App Template
 
 ## Collaborators
 

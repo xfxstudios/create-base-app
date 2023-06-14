@@ -17,20 +17,23 @@ async function copyTemplateFiles(options) {
   try{
     console.log('%s Starting create-base-app '+appVersion, chalk.green.bold('=>'));
     switch(options.template){
-      case chalk.blue('Normal-ReactJS'):
+      case chalk.blue('Normal ReactJS'):
           options.install = false
           return await execSync(`npx create-react-app ${options.projectname} --template typescript`);
 
-      case chalk.green('Vite-ReactJS'):
+      case chalk.green('Vite ReactJS'):
           return await execSync(`npm create vite@latest ${options.projectname} -- --template react-ts`);
 
-      case chalk.magenta('Vite-Vue'):
+      case chalk.magenta('Vite Vue'):
           return await execSync(`npm create vite@latest ${options.projectname} -- --template vue-ts`);
 
-      case chalk.yellow('Vite-Svelte'):
+      case chalk.yellow('Vite Svelte'):
           return await execSync(`npm create vite@latest ${options.projectname} -- --template svelte-ts`);
 
-      case chalk.magenta('Express-DDD-Api'):
+      case chalk.blue('NextJS App'):
+        return await execSync(`npx create-next-app@latest ${options.projectname} --use-npm`);
+
+      case chalk.magenta('Express DDD Api'):
         return execSync(`git clone --depth 1 --branch latest https://github.com/xfxstudios/express-ddd-api.git ${options.projectname}`);
     }
   }catch(e){
