@@ -11,7 +11,8 @@ async function copyTemplateFiles(options) {
     switch(options.template){
       case chalk.blue('Normal-ReactJS'):
           options.install = false
-          return await execSync(`npx create-react-app ${options.projectname} --template typescript`);
+        await execSync(`npm i -g create-react-app`);
+        return await execSync(`npx create-react-app ${options.projectname} --template typescript`);
 
       case chalk.green('Vite-ReactJS'):
           return await execSync(`npm create vite@latest ${options.projectname} -- --template react-ts`);
@@ -23,7 +24,12 @@ async function copyTemplateFiles(options) {
           return await execSync(`npm create vite@latest ${options.projectname} -- --template svelte-ts`);
 
       case chalk.blue('NextJS-App'):
-        return await execSync(`npx create-next-app@latest ${options.projectname} --use-npm`);
+        await execSync(`npm i -g create-next-app`);
+        return await execSync(`npx create-next-app ${options.projectname} --use-npm`);
+
+      case chalk.green('ReactNative-App'):
+        await execSync(`npm install -g create-react-native-app`);
+        return await execSync(`npx react-native init ${options.projectname} --template react-native-template-typescript`);
 
       case chalk.magenta('Express-DDD-Api'):
         return execSync(`git clone --depth 1 --branch latest https://github.com/xfxstudios/express-ddd-api.git ${options.projectname}`);
