@@ -31,7 +31,7 @@ async function copyTemplateFiles(options) {
           return await execSync(`npm create vite@latest ${options.projectname} -- --template svelte-ts`);
 
       case chalk.magenta('Express-DDD-Api'):
-        return execSync(`git clone --branch develop https://github.com/xfxstudios/express-ddd-api.git ${options.projectname}`);
+        return execSync(`git clone --depth 1 --branch latest https://github.com/xfxstudios/express-ddd-api.git ${options.projectname}`);
     }
   }catch(e){
     return e
