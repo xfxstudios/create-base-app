@@ -2,8 +2,11 @@ import arg from 'arg';
 import inquirer from 'inquirer';
 import {createProject} from './main';
 import chalk from 'chalk';
+const base=require('../package.json')
 
-export const appVersion='v1.2.2'
+console.log(base.version)
+
+
 
 function parseArgumentsIntoOptions(rawArgs) {
   const args=arg(
@@ -46,12 +49,12 @@ async function promptForMissingOptions(options) {
       name: 'template',
       message: 'Please choose which project template to use',
       choices: [
-        chalk.magenta('Express DDD Api'),
-        chalk.blue('Normal ReactJS'),
-        chalk.green('Vite ReactJS'),
-        chalk.magenta('Vite Vue'),
-        chalk.yellow('Vite Svelte'),
-        chalk.blue('NextJS App'),
+        chalk.magenta('Express-DDD-Api'),
+        chalk.blue('Normal-ReactJS'),
+        chalk.green('Vite-ReactJS'),
+        chalk.magenta('Vite-Vue'),
+        chalk.yellow('Vite-Svelte'),
+        chalk.blue('NextJS-App'),
       ],
       default: defaultTemplate,
     });
@@ -87,7 +90,7 @@ async function promptForMissingOptions(options) {
 
 export async function cli(args) {
   console.log(chalk.yellow("*************************************************"))
-  console.log(chalk.yellow(`*******[ Create Base App v${appVersion} ]********`))
+  console.log(chalk.yellow(`*******[ Create Base App v${base.version} ]********`))
   console.log(chalk.yellow("*************************************************\n"))
   let options=parseArgumentsIntoOptions(args);
   options=await promptForMissingOptions(options);
