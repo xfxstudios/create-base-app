@@ -33,6 +33,9 @@ async function copyTemplateFiles(options) {
 
       case chalk.magenta('Express-DDD-Api'):
         return execSync(`git clone --depth 1 --branch latest https://github.com/xfxstudios/express-ddd-api.git ${options.projectname}`);
+
+      case chalk.blue('Express-Serverless-Api'):
+        return execSync(`git clone --depth 1 --branch master https://github.com/xfxstudios/express-serverless-api-base.git ${options.projectname}`);
     }
   }catch(e){
     return e

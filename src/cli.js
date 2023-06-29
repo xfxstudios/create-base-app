@@ -56,6 +56,7 @@ async function promptForMissingOptions(options) {
         chalk.yellow('Vite-Svelte'),
         chalk.blue('NextJS-App'),
         chalk.green('ReactNative-App'),
+        chalk.blue('Express-Serverless-Api'),
       ],
       default: defaultTemplate,
     });
