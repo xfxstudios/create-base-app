@@ -51,6 +51,7 @@ MIT
 - [X] React Native Template
 - [X] Typescript Express Serverless Template
 - [X] Typescript Serverless Function Template
+- [X] Typescript Serverless DDD Template
 
 ## Collaborators
 

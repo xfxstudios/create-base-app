@@ -9,7 +9,7 @@ async function copyTemplateFiles(options) {
   try{
     console.log(`%s Starting create-base-app ${base.version}`, chalk.green.bold('=>'));
     switch(options.template){
-      case chalk.blue('Normal-ReactJS'):
+      case chalk.green('Normal-ReactJS'):
           options.install = false
         await execSync(`npm i -g create-react-app`);
         return await execSync(`npx create-react-app ${options.projectname} --template typescript`);
@@ -17,28 +17,31 @@ async function copyTemplateFiles(options) {
       case chalk.green('Vite-ReactJS'):
           return await execSync(`npm create vite@latest ${options.projectname} -- --template react-ts`);
 
-      case chalk.magenta('Vite-Vue'):
+      case chalk.green('Vite-Vue'):
           return await execSync(`npm create vite@latest ${options.projectname} -- --template vue-ts`);
 
-      case chalk.yellow('Vite-Svelte'):
+      case chalk.green('Vite-Svelte'):
           return await execSync(`npm create vite@latest ${options.projectname} -- --template svelte-ts`);
 
-      case chalk.blue('NextJS-App'):
+      case chalk.green('NextJS-App'):
         await execSync(`npm i -g create-next-app`);
         return await execSync(`npx create-next-app ${options.projectname} --use-npm`);
 
-      case chalk.green('ReactNative-App'):
+      case chalk.yellow('ReactNative-App'):
         await execSync(`npm install -g create-react-native-app`);
         return await execSync(`npx react-native init ${options.projectname} --template react-native-template-typescript`);
 
       case chalk.magenta('Express-DDD-Api'):
         return execSync(`git clone --depth 1 --branch latest https://github.com/xfxstudios/express-ddd-api.git ${options.projectname}`);
 
-      case chalk.blue('Express-Serverless-Api'):
+      case chalk.blue('Serverless-Express-Api'):
         return execSync(`git clone --depth 1 --branch master https://github.com/xfxstudios/express-serverless-api-base.git ${options.projectname}`);
 
       case chalk.blue('Serverless-Function'):
         return execSync(`git clone --depth 1 --branch master https://github.com/xfxstudios/serverless-function-base.git ${options.projectname}`);
+
+      case chalk.blue('Serverless-DDD-Api'):
+        return execSync(`git clone --depth 1 --branch master https://github.com/xfxstudios/serverless-ddd-base.git ${options.projectname}`);
     }
   }catch(e){
     return e
