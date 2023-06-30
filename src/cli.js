@@ -54,6 +54,7 @@ async function promptForMissingOptions(options) {
         chalk.green('Vite-Vue'),
         chalk.green('Vite-Svelte'),
         chalk.green('NextJS-App'),
+        chalk.green('NestJS-Backend'),
         chalk.yellow('ReactNative-App'),
         chalk.magenta('Express-DDD-Api'),
         chalk.blue('Serverless-Express-Api'),

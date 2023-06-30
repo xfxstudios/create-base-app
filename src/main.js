@@ -27,6 +27,10 @@ async function copyTemplateFiles(options) {
         await execSync(`npm i -g create-next-app`);
         return await execSync(`npx create-next-app ${options.projectname} --use-npm`);
 
+      case chalk.green('NestJS-Backend'):
+        await execSync(`npm i -g @nestjs/cli`);
+        return await execSync(`nest new ${options.projectname}`);
+
       case chalk.yellow('ReactNative-App'):
         await execSync(`npm install -g create-react-native-app`);
         return await execSync(`npx react-native init ${options.projectname} --template react-native-template-typescript`);

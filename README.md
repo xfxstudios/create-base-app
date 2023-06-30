@@ -53,6 +53,7 @@ MIT
 - [X] Vite Vue Typescript Template
 - [X] Vite Svelte Typescript Template
 - [X] NextJS App Template
+- [X] NestJS Backend Template
 - [X] React Native Template
 - [X] Typescript Express Serverless Template
 - [X] Typescript Serverless Function Template
