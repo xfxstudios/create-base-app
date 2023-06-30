@@ -57,3 +57,9 @@ MIT
 
 - Carlos Quintero <info.fxstudios@gmail.com> 
 - Github: <https://github.com/xfxstudios>
+
+<a href="https://github.com/xfxstudios/create-base-app/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=xfxstudios/create-base-app" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
