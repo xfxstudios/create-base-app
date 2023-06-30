@@ -49,7 +49,8 @@ MIT
 - [X] Vite Svelte Typescript Template
 - [X] NextJS App Template
 - [X] React Native Template
-- [X] Express Serverless Template
+- [X] Typescript Express Serverless Template
+- [X] Typescript Serverless Function Template
 
 ## Collaborators
 
