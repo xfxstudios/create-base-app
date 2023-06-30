@@ -19,6 +19,11 @@ npm i -g @xfxstudios/create-base-app
 npx create-base-app
 ```
 <p>and follow wizard.</p>
+
+## NOTE
+
+<p>Once the selected template is installed, show the hidden files and delete the .GIT folder</p>
+
 <br/>
 
 ![alt text](https://github.com/xfxstudios/create-base-app/blob/master/img/wizard1.jpg?raw=true)
