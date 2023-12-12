@@ -9,10 +9,9 @@ async function copyTemplateFiles(options) {
   try{
     console.log(`%s Starting create-base-app ${base.version}`, chalk.green.bold('=>'));
     switch(options.template){
-      case chalk.green('Normal-ReactJS'):
-          options.install = false
-        await execSync(`npm i -g create-react-app`);
-        return await execSync(`npx create-react-app ${options.projectname} --template typescript`);
+
+      case chalk.green('Astro'):
+        return await execSync(`npm create astro@latest ${options.projectname} -- --template framework-react`);
 
       case chalk.green('Vite-ReactJS'):
           return await execSync(`npm create vite@latest ${options.projectname} -- --template react-ts`);

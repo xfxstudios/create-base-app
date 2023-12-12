@@ -49,7 +49,7 @@ async function promptForMissingOptions(options) {
       name: 'template',
       message: 'Please choose which project template to use',
       choices: [
-        chalk.green('Normal-ReactJS'),
+        chalk.green('Astro'),
         chalk.green('Vite-ReactJS'),
         chalk.green('Vite-Vue'),
         chalk.green('Vite-Svelte'),
