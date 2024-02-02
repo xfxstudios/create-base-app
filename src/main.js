@@ -45,6 +45,9 @@ async function copyTemplateFiles(options) {
 
       case chalk.blue('Serverless-DDD-Api'):
         return execSync(`git clone --depth 1 --branch master https://github.com/xfxstudios/serverless-ddd-base.git ${options.projectname}`);
+
+      case chalk.blue('Serverless-Compose-App'):
+        return execSync(`git clone --depth 1 --branch master https://github.com/xfxstudios/lambda-compose-squeleton.git ${options.projectname}`);
     }
   }catch(e){
     return e
