@@ -60,6 +60,7 @@ async function promptForMissingOptions(options) {
         chalk.blue('Serverless-Express-Api'),
         chalk.blue('Serverless-Function'),
         chalk.blue('Serverless-DDD-Api'),
+        chalk.blue('Serverless-Compose-App'),
       ],
       default: defaultTemplate,
     });
